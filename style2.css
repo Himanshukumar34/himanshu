@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    opacity: 0.6;
+}
